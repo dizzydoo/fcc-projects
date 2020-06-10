@@ -1,0 +1,173 @@
+/* SCROLLBAR MODIFICATIONS */
+::-webkit-scrollbar { 
+    /* display: none; */
+  width: 0.8rem;
+  length: 0.3rem;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121;
+  border-radius: 0.7rem;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #37474F;
+}
+/* END SCROLLBAR MODIFICATIONS */
+
+/* MAIN PAGE CSS */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #B0BEC5;
+  text-align: center;
+  text-decoration: none;
+}
+/* END MAIN PAGE CSS */
+
+/* NAVIGATION CSS */
+nav {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #27252b;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.8rem;
+  padding: 1.0rem 1.5rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+.nav-list a:active {
+  background: #546E7A;
+}
+/* END NAVIGATION CSS */
+
+
+body {
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  /* text-shadow: 1px 4px 4px #BCAAA4; */
+  color: #E0E0E0;
+  font-weight: normal;
+  background: linear-gradient(-180deg, #333333, #212121);
+}
+
+#welcome-section {
+  font-family: 'Nunito', sans-serif;
+  height: 100vh;
+  width: 100%;
+  line-height: 2.0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 450;
+  font-size: 5rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 4.2rem;
+}
+
+.fas {
+  font-weight: 300;
+  font-size: 1.6rem
+}
+
+p {
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+/* END GENERAL CSS */
+
+/* BEGIN PROJECTS SECTION CSS */
+
+#projects {
+  background: linear-gradient(-180deg, #2d2d2d, #262626);
+}
+
+.projects-grid {
+  display: inline-grid;
+  width: 80vw;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 1.2rem;
+}
+
+.project-tile img {
+  
+  border-radius: 50%
+}
+
+.project-tile span {
+  display: none;
+}
+
+.project-tile:hover .tooltip {
+  font-size: 1.4rem;
+  display: block;
+}
+
+/* END PROJECTS SECTION CSS */
+
+/* BEGIN CONTACT SECTION CSS */
+
+#contact {
+  background: linear-gradient(-180deg, #262626, #212121);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.contact-links * {
+  font-size: 3.0rem;
+  transition: all 0.3s ease-out;
+}
+
+ .contact-details:hover > i {
+  transform: rotate(-12deg);
+}
+
+/* END CONTACT SECTION CSS */
+
+footer, footer > p {
+  font-size: 1.4rem;
+}
